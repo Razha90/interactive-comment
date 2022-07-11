@@ -4,10 +4,7 @@ import {ReactComponent as ImgDel} from './images/icon-delete.svg';
 
 function CommentBtn({
     commentData,
-    reply,
     setReply,
-    valueEdit,
-    setValueEdit,
     varType,
 }) {
     const currentUser = 'juliusomo'; 

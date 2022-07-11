@@ -2,10 +2,7 @@ import CommentBtn from "./commentBtn";
 
 function CommentVote({
     commentData,
-    reply,
     setReply,
-    valueEdit,
-    setValueEdit,
     varType,
 }) {
     return (
@@ -18,10 +15,7 @@ function CommentVote({
         <div className="comment-button-pc">
             <CommentBtn 
             commentData={commentData}
-            reply={reply}
             setReply={setReply}
-            valueEdit={valueEdit}
-            setValueEdit={setValueEdit}
             varType={varType}
             />
         </div>

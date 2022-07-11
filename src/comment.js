@@ -14,7 +14,6 @@ function Comment({
     deleteComment,
 }) {
     const [getData , setGetData] = useState(commentData.content);
-    const [valueEdit , setValueEdit] = useState(false);
    
     const isReplying = reply && reply.id === commentData.id && reply.type === 'reply' && reply.myType === 'comment';
     const isEditing = reply && reply.id === commentData.id && reply.type === 'edit' && reply.myType === 'comment';
@@ -47,17 +46,12 @@ function Comment({
             commentData={commentData}
             reply={reply}
             setReply={setReply}
-            valueEdit={valueEdit}
-            setValueEdit={setValueEdit}
             varType='comment'
             />
             <div className="comment-body">
                 <CommentHeader
                 commentData={commentData}
-                reply={reply}
                 setReply={setReply}
-                valueEdit={valueEdit}
-                setValueEdit={setValueEdit}
                 varType='comment'
                 />
     

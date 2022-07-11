@@ -34,6 +34,9 @@ function Reply({
             <div className="comment">
             <CommentVote 
             commentData={commentData}
+            reply={reply}
+            setReply={setReply}
+            varType='reply'
             />
             <div className="comment-body">
             <CommentHeader
