@@ -408,4 +408,8 @@ textarea::-webkit-scrollbar {
     justify-content: space-between;
     align-items: center;
   }
+
+  .comment-button-pc {
+    display: block;
+  }
 }
